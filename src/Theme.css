@@ -1,0 +1,57 @@
+/* Hero Section */
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1581009137042-c552b485697a?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2 {
+    font-weight: 700 !important; /* Make headers bolder */
+}
+
+/* Product Card */
+.card {
+  background-color: #222; /* Darker card background */
+  color: white;
+  border: 1px solid #444;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 172, 193, 0.3);
+}
+
+.card-title {
+    color: #00acc1; /* Accent color for title */
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #00acc1;
+  border-color: #00acc1;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #007a8a;
+  border-color: #007a8a;
+}
